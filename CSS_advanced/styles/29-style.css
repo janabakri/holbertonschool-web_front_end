@@ -1,1 +1,21 @@
+/* Nav hover variable */
+:root {
+  --nav-item-link-hover: var(--color-white);
+}
 
+/* nav-link before element */
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
+}
+
+/* hover effect */
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
+}
